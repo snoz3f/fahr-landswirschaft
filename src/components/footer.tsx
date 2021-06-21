@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from "react"
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { toast } from 'react-toastify'
 import { Link } from "gatsby"
@@ -7,8 +7,8 @@ import telegramIcon from '../images/telegram.svg'
 import facebookIcon from '../images/facebook.svg'
 import instagramIcon from '../images/instagram.svg'
 
-const Footer = () => {
-  const [value, setValue] = useState('')
+const Footer : FC = () => {
+  const [value, setValue] = useState<string>('')
 
   const onSubmit = (e) => {
     e.preventDefault();

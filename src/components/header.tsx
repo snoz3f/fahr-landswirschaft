@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { FC, useEffect, useState } from "react"
 import { Link } from "gatsby"
 import cn from "classnames"
 import companyThumbnail from "../images/fahr_erlebnis_weiss_transparent.png"
@@ -14,10 +14,16 @@ import {
   NavItem,
 } from "reactstrap"
 
-const Header = ({ siteTitle, logo }) => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrollY, setScrollY] = useState(0)
-  const [isVisible, setIsVisible] = useState(true)
+interface HeaderProps{
+  siteTitle?: string;
+  logo?: string;
+}
+
+
+const Header: FC<HeaderProps> = ({ siteTitle, logo }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [scrollY, setScrollY] = useState<number>(0)
+  const [isVisible, setIsVisible] = useState<boolean>(true)
 
   const handleScroll = (event) => {
     if (scrollY <= event.currentTarget.scrollY) {

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {FC} from "react"
 import { toast } from 'react-toastify'
 import styled from 'styled-components'
 
@@ -9,7 +9,12 @@ const HiddenInput = styled.input`
   width: 0;
 `
 
-const ContactForm = ({ className }) => {
+interface ContactFormProps{
+  className: string;
+}
+
+
+const ContactForm: FC<ContactFormProps> = ({ className }) => {
   const action = process.env.GATSBY_FORMSPREE_ENDPOINT
 
   function submitForm(ev) {

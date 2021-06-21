@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from "react"
 import { Container, Row, Col } from "reactstrap"
 import cn from 'classnames'
 import ErlebnisseK from './erlebnisse-kinder'
@@ -6,8 +6,8 @@ import Ferienlager from './erlebnisse-ferienlager'
 import ErlebnisseE from './erlebnisse-erwachsene'
 import ErlebnisseS from './erlebnisse-schule'
 
-const MenuErlebnisse = () => {
-  const [menuCategory, setMenuCategory] = useState('Kinder');
+const MenuErlebnisse: FC = () => {
+  const [menuCategory, setMenuCategory] = useState<string>('Kinder');
   let SelectedCategory;
   if (menuCategory === 'Kinder' ) {
     SelectedCategory = ErlebnisseK;

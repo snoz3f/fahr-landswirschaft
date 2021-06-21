@@ -47,7 +47,7 @@ To add your instagram username, change the ```gatsby-config.js``` file:
     },
 ```
 
-To add your business' coordinates onto the map, change the ```index.js``` file:
+To add your business' coordinates onto the map, change the ```index.tsx``` file:
 ```js
 {typeof window !== 'undefined' &&
       <LeafletMap

@@ -30,7 +30,7 @@
 
 // export default Hero;
 
-import React from "react"
+import React, { FC } from "react"
 import { Container } from "reactstrap"
 import { Link } from "gatsby"
 import defaultHero from '../images/fahr_erlebnis_weiss_transparent.png';
@@ -39,8 +39,17 @@ import "../styles/components/hero.scss"
 
 import companyThumbnail from "../images/fahr_erlebnis_weiss_transparent.png"
 
+interface HeroProps{
+   title?: string,
+   subtitle?: string,
+   image?: {
+     src: string
+   },
+   fullScreen: boolean
+}
 
-const Hero = ({
+
+const Hero : FC<HeroProps> = ({
     title="Fahr Erlebnis",
     subtitle="Die Erlebnis Oase im Limmattal",
     image,

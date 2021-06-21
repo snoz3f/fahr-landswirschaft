@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC } from "react"
 import { Parallax } from "react-parallax"
 
 import { Container, Row, Col } from "reactstrap"
@@ -37,8 +37,10 @@ import Parallax7Mobile from '../images/parallax7-mobile.jpg'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import { PagesProps } from "./PagesProps"
+import { object } from "prop-types"
 
-const IndexPage = ({ data: {
+const IndexPage : FC<PagesProps> = ({ data: {
   coffeeShop,
   allContentfulContainerTexteHomepage,
   allContentfulAktuell,

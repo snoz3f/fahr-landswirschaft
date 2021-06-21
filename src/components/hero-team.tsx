@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { FC } from "react"
 import Img from 'gatsby-image'
 
 import companyThumbnail from "../images/fahr_erlebnis_weiss_transparent.png"
 
+interface HeroTeamProps{
+  title?: string,
+  image?: object
+}
 
-const HeroGastro = ({ image, title="Gastronomie" }) => {
+
+const HeroTeam : FC<HeroTeamProps> = ({ image, title="Das Team"}) => {
     return (
         <section className="hero">
             <div className="hero-description">
@@ -27,4 +32,4 @@ const HeroGastro = ({ image, title="Gastronomie" }) => {
     )
 }
 
-export default HeroGastro;
+export default HeroTeam;

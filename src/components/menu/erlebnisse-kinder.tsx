@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { FC } from "react"
 import {useStaticQuery, graphql} from 'gatsby'
 
-const Ferienlager = () => {
+const ErlebnisseK: FC = () => {
   const data = useStaticQuery(graphql`
-  query  {
-  allContentfulErlebnisseTextHomepage(filter: {name: {eq: "Erlebnisse Ferienlager"}}) {
+  query {
+  allContentfulErlebnisseTextHomepage(filter: {name: {eq: "Erlebnisse für Kinder"}}) {
     edges {
       node {
         beschreibung {
@@ -13,20 +13,19 @@ const Ferienlager = () => {
       }
     }
   }
-}
-  `)
+ }   `)
 
-const items = data.allContentfulErlebnisseTextHomepage.edges;
-return (
+
+  const items = data.allContentfulErlebnisseTextHomepage.edges;
+  return (
     <div>
       <ul className="menu-items-grid">
         {
           items.map(({ node }) => {
             return (
-                <li key={node.id} className="menu-item">
+              <li key={node.id} className="menu-item">
                 <span>{node.beschreibung.beschreibung}</span>
               </li>
-            
             )
           })
         }
@@ -34,8 +33,9 @@ return (
       <br></br>
 
       <a className="menu-link" href="https://fahr-erleben.ch" target="_blank" rel="noopener noreferrer">zur Anmeldung</a>
+
     </div>
   )
 }
 
-export default Ferienlager;
+export default ErlebnisseK;

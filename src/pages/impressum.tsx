@@ -1,4 +1,4 @@
-import React from "react"
+import React, {FC }   from "react"
 
 import Layout2 from "../components/layout2"
 import SEO from "../components/seo"
@@ -6,9 +6,10 @@ import { graphql } from 'gatsby'
 // import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 import HeroImpressum from '../components/hero-impressum'
+import { PagesProps } from "./PagesProps"
 
 
-const Impressum = ({data: {
+const Impressum: FC<PagesProps> = ({data: {
   
 header} }) => {
 return (

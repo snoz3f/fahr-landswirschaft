@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { FC } from "react"
 import Img from 'gatsby-image'
 
 import companyThumbnail from "../images/fahr_erlebnis_weiss_transparent.png"
 
+interface HeroContactProps{
+  title?: string,
+  image?: object
+}
 
-const HeroImpressum = ({ image, title="Impressum"}) => {
+
+const HeroKontakt: FC<HeroContactProps> = ({ image, title="Kontakt" }) => {
     return (
         <section className="hero">
             <div className="hero-description">
@@ -14,7 +19,6 @@ const HeroImpressum = ({ image, title="Impressum"}) => {
                 className="img-head"
               />    
                 <h1>{title}</h1>
-                {/* <h2>{subtitle}</h2> */}
             </div >
            
 
@@ -28,4 +32,4 @@ const HeroImpressum = ({ image, title="Impressum"}) => {
     )
 }
 
-export default HeroImpressum;
+export default HeroKontakt;

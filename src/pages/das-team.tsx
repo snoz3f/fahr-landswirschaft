@@ -1,4 +1,4 @@
-import React from "react"
+import React, {FC} from "react"
 import { graphql } from 'gatsby'
 import { Container, Row, Col } from 'reactstrap'
 
@@ -10,8 +10,10 @@ import HeroTeam from '../components/hero-team'
 
 
 import '../styles/pages/das-team.scss';
+import { PagesProps } from "./PagesProps"
 
-const TeamPage = ({ data: {
+
+const TeamPage : FC<PagesProps> = ({ data: {
   allContentfulTeam,
 header} }) => {
 return (

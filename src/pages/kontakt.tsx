@@ -1,4 +1,4 @@
-import React from "react"
+import React, {FC } from "react"
 import { Container, Row, Col } from 'reactstrap'
 
 import Layout2 from "../components/layout2"
@@ -11,8 +11,9 @@ import ContactForm from '../components/contact'
 import Footer from '../components/footer'
 
 import '../styles/pages/kontakt.scss'
+import { PagesProps } from "./PagesProps"
 
-const KontaktPage = ({ data: {
+const KontaktPage: FC<PagesProps> = ({ data: {
 kontakt} }) => {
 
 return (
