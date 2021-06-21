@@ -1,29 +1,33 @@
-import { jobs } from "gatsby/dist/redux/reducers"
+import { PageProps } from "gatsby"
 
-export interface PagesProps{
+export interface PagesProps extends PageProps{
   data: {
     kontakt: {
       childImageSharp: {
-        fluid: object;
+        fluid: object
       }
     },
 
     allContentfulTeam: {
       edges: [{
         node: object
-      }];
-    };
+      }]
+    },
     header: {
       childImageSharp: {
         fluid: object
       }
     };
     allContentfulAktuell:{
-      nodes: object;
+      nodes: object
   }
     allContentfulContainerTexteHomepage:{
-      nodes: object;
+      nodes: object
     }
-    coffeeShop: object;
+    coffeeShop: {
+      childImageSharp:{
+        fluid: object
+    }
+    }
   }
 }

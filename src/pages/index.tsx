@@ -40,6 +40,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { PagesProps } from "./PagesProps"
 import { object } from "prop-types"
 
+
+
 const IndexPage : FC<PagesProps> = ({ data: {
   coffeeShop,
   allContentfulContainerTexteHomepage,
