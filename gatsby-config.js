@@ -1,6 +1,6 @@
 const dotenv = require('dotenv')
 
-  dotenv.config()
+dotenv.config()
 
 module.exports = {
   siteMetadata: {
@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACEID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: "ye599n3dkmr1",
+        accessToken: "zUNXYsF561YulWxoRB3D4JOlqhkwrj7JIC1kD1m7GcE",
       },
     },
     {
