@@ -10,7 +10,7 @@ import HeroTeam from '../components/hero-team'
 
 
 import '../styles/pages/das-team.scss';
-import { PagesProps } from "./PagesProps"
+import { PagesProps } from "../PagesProps"
 
 
 const TeamPage : FC<PagesProps> = ({ data: {

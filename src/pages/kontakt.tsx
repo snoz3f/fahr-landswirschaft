@@ -11,7 +11,7 @@ import ContactForm from '../components/contact'
 import Footer from '../components/footer'
 
 import '../styles/pages/kontakt.scss'
-import { PagesProps } from "./PagesProps"
+import { PagesProps } from "../PagesProps"
 
 const KontaktPage: FC<PagesProps> = ({ data: {
 kontakt} }) => {
