@@ -2,7 +2,7 @@
   "name": "fahr-erlebnis-webseite",
   "private": true,
   "description": "Fahr Erlebnis Webseite",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Ray <ray@blocklab.ch>",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.3",
