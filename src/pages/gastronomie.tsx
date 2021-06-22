@@ -7,7 +7,7 @@ import { graphql } from "gatsby"
 // import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 import HeroGastro from '../components/hero-gastro'
-import { PagesProps } from "./PagesProps"
+import { PagesProps } from "../PagesProps"
 
 
 const GastroPage: FC<PagesProps> = ({ data: {

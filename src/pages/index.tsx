@@ -37,7 +37,7 @@ import Parallax7Mobile from '../images/parallax7-mobile.jpg'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
-import { PagesProps } from "./PagesProps"
+import { PagesProps } from "../PagesProps"
 import { object } from "prop-types"
 
 
