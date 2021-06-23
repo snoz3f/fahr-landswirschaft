@@ -1,4 +1,4 @@
-import React, {FC} from "react"
+import React, { FC } from "react"
 
 import Layout2 from "../components/layout2"
 import SEO from "../components/seo"
@@ -7,7 +7,7 @@ import { graphql } from "gatsby"
 // import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 import HeroGastro from '../components/hero-gastro'
-import { PagesProps } from "../PagesProps"
+import { PagesProps } from "../props/PagesProps"
 
 
 const GastroPage: FC<PagesProps> = ({ data: {

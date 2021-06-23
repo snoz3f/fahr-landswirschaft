@@ -19,7 +19,6 @@ interface HeaderProps{
   logo?: string;
 }
 
-
 const Header: FC<HeaderProps> = ({ siteTitle, logo }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [scrollY, setScrollY] = useState<number>(0)

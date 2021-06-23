@@ -2,13 +2,10 @@ import React, { FC } from "react"
 import Img from 'gatsby-image'
 
 import companyThumbnail from "../images/fahr_erlebnis_weiss_transparent.png"
+import {iFluid} from "../contentfulTypes/iFluid";
+import {HeroProps} from "../props/HeroProps";
 
-interface HeroImpressumProps{
-  title?: string,
-  image?: object
-}
-
-const HeroImpressum :FC<HeroImpressumProps> = ({ image, title="Impressum"}) => {
+const HeroImpressum :FC<HeroProps> = ({ image, title="Impressum"}) => {
     return (
         <section className="hero">
             <div className="hero-description">

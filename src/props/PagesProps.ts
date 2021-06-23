@@ -1,21 +1,23 @@
 import { PageProps } from "gatsby"
+import { iFluid } from "../contentfulTypes/iFluid";
+import  { iNode } from "../contentfulTypes/iNode"
 
 export interface PagesProps extends PageProps{
   data: {
     kontakt: {
       childImageSharp: {
-        fluid: object
+        fluid: iFluid
       }
     },
 
     allContentfulTeam: {
       edges: [{
-        node: object
+        node: iNode
       }]
     },
     header: {
       childImageSharp: {
-        fluid: object
+        fluid: iFluid
       }
     };
     allContentfulAktuell:{
@@ -26,7 +28,7 @@ export interface PagesProps extends PageProps{
     }
     coffeeShop: {
       childImageSharp:{
-        fluid: object
+        fluid: iFluid
     }
     }
   }

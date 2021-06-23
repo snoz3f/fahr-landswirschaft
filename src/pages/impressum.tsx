@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 // import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 import HeroImpressum from '../components/hero-impressum'
-import { PagesProps } from "../PagesProps"
+import { PagesProps } from "../props/PagesProps"
 
 
 const Impressum: FC<PagesProps> = ({data: {

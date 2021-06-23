@@ -38,16 +38,7 @@ import defaultHero from '../images/fahr_erlebnis_weiss_transparent.png';
 import "../styles/components/hero.scss"
 
 import companyThumbnail from "../images/fahr_erlebnis_weiss_transparent.png"
-
-interface HeroProps{
-   title?: string,
-   subtitle?: string,
-   image?: {
-     src: string
-   },
-   fullScreen: boolean
-}
-
+import {HeroProps} from "../props/HeroProps";
 
 const Hero : FC<HeroProps> = ({
     title="Fahr Erlebnis",
